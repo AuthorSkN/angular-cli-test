@@ -1,0 +1,8 @@
+<ul class="ux-localization__list">
+    <li class="ux-localization__list-item"
+        *ngFor="let language of _languages; let i = index;"
+        (tap)="_onLanguageChange(language)"
+    >
+        <ux-button [kind]="i === 0 ? 'primary' : 'default'" [text]="language"></ux-button>
+    </li>
+</ul>
